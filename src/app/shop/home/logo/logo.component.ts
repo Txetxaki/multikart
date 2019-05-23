@@ -1,16 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-logo',
+  selector: 'app-logo-ten',
   templateUrl: './logo.component.html',
   styleUrls: ['./logo.component.scss']
 })
-export class LogoComponent implements OnInit {
+export class LogoTenComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() { }
-  
+  ngOnInit() {
+  }
+
   // Slick slider config
   public logoSlideConfig: any = {
     dots: false,
@@ -54,21 +55,21 @@ export class LogoComponent implements OnInit {
 
   // Logo
   public logo = [{
-      image: 'assets/images/logos/1.png',
+      image: 'assets/images/logos/9.png',
     }, {
-      image: 'assets/images/logos/2.png',
+      image: 'assets/images/logos/10.png',
     }, {
-      image: 'assets/images/logos/3.png',
+      image: 'assets/images/logos/11.png',
     }, {
-      image: 'assets/images/logos/4.png',
+      image: 'assets/images/logos/12.png',
     }, {
-      image: 'assets/images/logos/5.png',
+      image: 'assets/images/logos/13.png',
     }, {
-      image: 'assets/images/logos/6.png',
+      image: 'assets/images/logos/14.png',
     }, {
-      image: 'assets/images/logos/7.png',
+      image: 'assets/images/logos/15.png',
     }, {
-      image: 'assets/images/logos/8.png',        
+      image: 'assets/images/logos/16.png',        
   }]
 
 }

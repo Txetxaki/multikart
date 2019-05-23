@@ -1,17 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-blog',
+  selector: 'app-blog-ten',
   templateUrl: './blog.component.html',
   styleUrls: ['./blog.component.scss']
 })
-export class BlogComponent implements OnInit {
+export class BlogTenComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() { }
+  ngOnInit() {
+  }
 
-  // Slick slider config
+   // Slick slider config
   public blogSlideConfig: any = {
       infinite: true,
       speed: 300,
@@ -36,26 +37,29 @@ export class BlogComponent implements OnInit {
 
   // Blog
   public blog = [{
-      image: 'assets/images/blog/1.jpg',
+      image: 'assets/images/pets/blog/1.jpg',
       date: '25 January 2018',
       title: 'Lorem ipsum dolor sit consectetur adipiscing elit,',
+      details: 'Lorem ipsum dolor sit consectetur adipiscing elit,Lorem ipsum dolor sit consectetur adipiscing elit',
       by: 'John Dio'
     }, {
-      image: 'assets/images/blog/2.jpg',
+      image: 'assets/images/pets/blog/2.jpg',
       date: '26 January 2018',
       title: 'Lorem ipsum dolor sit consectetur adipiscing elit,',
+      details: 'Lorem ipsum dolor sit consectetur adipiscing elit,Lorem ipsum dolor sit consectetur adipiscing elit',
       by: 'John Dio'
     }, {
-      image: 'assets/images/blog/3.jpg',
+      image: 'assets/images/pets/blog/3.jpg',
       date: '27 January 2018',
       title: 'Lorem ipsum dolor sit consectetur adipiscing elit,',
+      details: 'Lorem ipsum dolor sit consectetur adipiscing elit,Lorem ipsum dolor sit consectetur adipiscing elit',
       by: 'John Dio'
     }, {
-      image: 'assets/images/blog/4.jpg',
+      image: 'assets/images/pets/blog/4.jpg',
       date: '28 January 2018',
       title: 'Lorem ipsum dolor sit consectetur adipiscing elit,',
+      details: 'Lorem ipsum dolor sit consectetur adipiscing elit,Lorem ipsum dolor sit consectetur adipiscing elit',
       by: 'John Dio'
   }]
-  
 
 }

@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BlogRoutingModule } from './blog-routing.module'
 
-import { BlogLeftSidebarComponent } from './blog-left-sidebar/blog-left-sidebar.component';
-import { BlogRightSidebarComponent } from './blog-right-sidebar/blog-right-sidebar.component';
+import { BlogComponent } from './blog/blog.component';
 import { BlogDetailsComponent } from './blog-details/blog-details.component';
 
 @NgModule({
@@ -12,8 +11,7 @@ import { BlogDetailsComponent } from './blog-details/blog-details.component';
     BlogRoutingModule
   ],
   declarations: [
-    BlogLeftSidebarComponent,
-    BlogRightSidebarComponent,
+    BlogComponent,
     BlogDetailsComponent
   ]
 })

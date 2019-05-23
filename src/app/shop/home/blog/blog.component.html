@@ -1,12 +1,13 @@
 <!-- blog section start-->
-<section class="blog p-t-0">
+<section class="section-b-space blog p-t-0 blog_box">
   <div class="container">
     <div class="row">
       <div class="col">
-        <div class="title1 section-t-space">
-          <h4>Recent Story</h4>
-          <h2 class="title-inner1">from the blog</h2>
-        </div>
+         <div class="title1 title5">
+              <h4>Recent Story</h4>
+              <h2 class="title-inner1">from the blog</h2>
+              <hr role="tournament6">
+          </div>
       </div>
     </div>
     <div class="row">
@@ -20,12 +21,9 @@
               </div>
             </a>
             <div class="blog-details">
-              <h4>{{bg.date}}</h4>
-              <a [routerLink]="'/home/one'">
-                <p>{{bg.title}}</p>
-              </a>
-              <hr class="style1">
-              <h6>by: {{bg.by}} , 2 Comment</h6>
+                <a [routerLink]="'/blog/details'"><p>{{bg.title}}</p></a>
+                <p>{{bg.details}}</p>
+                <a class="read-cls" [routerLink]="'/blog/details'">read more</a>
             </div>
           </div>
         </ngx-slick-carousel>

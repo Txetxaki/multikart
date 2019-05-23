@@ -1,21 +1,33 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewEncapsulation } from '@angular/core';
 import { Product } from '../../shared/classes/product';
 import { ProductsService } from '../../shared/services/products.service';
-import { ApiService } from '../../shared/services/api.service';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-home-ten',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
-export class HomeComponent implements OnInit {
-  
+export class HomeComponent implements OnInit, OnDestroy {
+
   public products: Product[] = [];
   
-  constructor(private productsService: ProductsService, private apiService: ApiService) {   }
+  constructor(private productsService: ProductsService) {   }
 
   ngOnInit() {
-    this.productsService.getProducts().subscribe(product => this.products = product);
+  	this.productsService.getProducts().subscribe(product => { 
+  	  product.filter((item: Product) => {
+         if(item.category == 'pets')
+         	this.products.push(item)
+      })
+    });
+    // hide search widgets
+    document.getElementById("search-widgets").style.display = "none";
+  }
+
+  ngOnDestroy() {
+    // show search widgets
+    document.getElementById("search-widgets").style.display = "block";
   }
 
 }

@@ -19,8 +19,7 @@ import { OrderByPipe } from './pipes/order-by.pipe';
 // components
 import { HeaderComponent } from './header/header/header.component';
 import { LeftSidebarComponent } from './header/left-sidebar/left-sidebar.component';
-import { TopbarOneComponent } from './header/widgets/topbar/topbar-one/topbar-one.component';
-import { TopbarTwoComponent } from './header/widgets/topbar/topbar-two/topbar-two.component';
+import { TopbarComponent } from './header/widgets/topbar/topbar/topbar.component';
 import { NavbarComponent } from './header/widgets/navbar/navbar.component';
 import { SettingsComponent } from './header/widgets/settings/settings.component';
 import { LeftMenuComponent } from './header/widgets/left-menu/left-menu.component';
@@ -53,8 +52,7 @@ import { SocialComponent } from './footer/widgets/social/social.component';
     NavbarComponent,
     SettingsComponent,
     LeftMenuComponent,
-    TopbarOneComponent,
-    TopbarTwoComponent,
+    TopbarComponent,
     InformationComponent,
     CategoriesComponent,
     WhyWeChooseComponent,

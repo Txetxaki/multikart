@@ -1,27 +1,50 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-collection-banner',
+  selector: 'app-collection-banner-ten',
   templateUrl: './collection-banner.component.html',
   styleUrls: ['./collection-banner.component.scss']
 })
-export class CollectionBannerComponent implements OnInit {
+export class CollectionBannerTenComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() { }
+  ngOnInit() {
+  }
 
   // Collection banner
-  public category = [{
-    image: 'assets/images/sub-banner1.jpg',
-    save: 'save 50%',
-    title: 'men',
-    link: '/home/left-sidebar/collection/men'
-  }, {
-    image: 'assets/images/sub-banner2.jpg',
-    save: 'save 50%',
-    title: 'women',
-    link: '/home/left-sidebar/collection/women'
+  public categoryOne = [{
+    image: 'assets/images/pets/banner/1.jpg',
+    title: 'Clothes',
+    link: '/home/left-sidebar/collection/pets'
+  }, 
+  {
+    image: 'assets/images/pets/banner/2.jpg',
+    title: 'Groom',
+    link: '/home/left-sidebar/collection/pets'
+  },
+  {
+    image: 'assets/images/pets/banner/3.jpg',
+    title: 'food',
+    link: '/home/left-sidebar/collection/pets'
   }]
+
+  public categoryTwo = [{
+    image: 'assets/images/pets/banner/4.jpg',
+    title: 'Home',
+    link: '/home/left-sidebar/collection/pets'
+  },
+  {
+    image: 'assets/images/pets/banner/5.jpg',
+    title: 'cats',
+    link: '/home/left-sidebar/collection/pets'
+  },
+  {
+    image: 'assets/images/pets/banner/6.jpg',
+    title: 'bowls',
+    link: '/home/left-sidebar/collection/pets'
+  }]
+
+  
 
 }

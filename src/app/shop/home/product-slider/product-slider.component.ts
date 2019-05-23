@@ -2,12 +2,12 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Product } from '../../../shared/classes/product';
 
 @Component({
-  selector: 'app-product-slider',
+  selector: 'app-product-slider-ten',
   templateUrl: './product-slider.component.html',
   styleUrls: ['./product-slider.component.scss']
 })
-export class ProductSliderComponent implements OnInit {
-  
+export class ProductSliderTenComponent implements OnInit {
+
   @Input() products: Product;
    
   constructor() { }
