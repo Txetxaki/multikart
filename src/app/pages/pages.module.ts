@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { PagesRoutingModule } from './pages-routing.module';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { IsotopeModule } from 'ngx-isotope';
+import { FormsModule } from '@angular/forms';
 
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
@@ -34,7 +35,8 @@ import { MasonaryFullwidthComponent } from './portfolio/masonary-fullwidth/mason
     CommonModule,
     PagesRoutingModule,
     SlickCarouselModule,
-    IsotopeModule
+    IsotopeModule,
+    FormsModule
   ],
   declarations: [
     AboutUsComponent,

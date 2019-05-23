@@ -7,10 +7,17 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 })
 export class ApiService {
 
-  public token: Object;
+  public token: string;
   public tokenReady = false;
 
-  constructor(private config:ConfigService, private http:HttpClient) { }
+  constructor(private config:ConfigService, private http:HttpClient) { 
+
+    this.setToken();
+    setTimeout(() => {
+      console.log(this.token);
+    }, 5000);
+
+  }
 
   setToken() {
 
@@ -18,11 +25,13 @@ export class ApiService {
       .set('username', this.config.getUserName())
       .set('password', this.config.getKey());
 
+
     this.http.post(this.config.getUrl() + 'login', payload)
         .subscribe(data => {
           this.token =  data['cookie'];
           this.tokenReady = true;
-          console.log(this.token);
+         
+
     });
   }
 }
